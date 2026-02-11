@@ -273,6 +273,11 @@ body, html{
   align-items: center;
   justify-content: center;
 }
+#myPhoto{
+  height: 330px;
+  width: 200px;
+  /* margin-top: 20px; */
+}
 
 /* IMAGE STATIC - DOES NOT ROTATE */
 .border-rotate img {
@@ -281,7 +286,8 @@ body, html{
   border-radius: 50%;
   object-fit: cover;
   background: #fff;    /* white inner circle */
-  padding: 4px;
+  padding: 1px;
+  /* padding-top: 10px; */
   
 }
 
