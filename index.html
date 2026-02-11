@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- navbar section -->
+  <nav class="navbar navbar-expand-lg shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i>Vaibhav</i></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-start" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="welcome" data-aos="flip-left">Hello, It's Me</h1>
+
+        <h1 class="fw-bold" data-aos="flip-right">
+          <span class="name">Vaibhav Mali</span>
+        </h1>
+
+        <h2 class="typing-text"> And I'm
+          <span id="typing"></span>
+          <span class="underline"></span>
+        </h2>
+        <p>I’m a Full Stack Java Developer who enjoys building scalable, secure, and high-performance web applications.
+          <br> I love working with Java, Spring Boot, and modern frontend technologies to create clean, efficient, and
+          user-friendly solutions.
+        </p>
+        <div class="social-icons">
+
+          <a href="https://github.com/Vaibhavmali17" class="icon github"><i class="fab fa-github"></i></a>
+          <!-- <a href="#" class="icon facebook"><i class="fab fa-facebook"></i></a> -->
+          <a href="https://www.linkedin.com/in/vaibhav-m-mali7" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- hero section end -->
+
+
+  <!-- About section -->
+  <!-- About section start -->
+  <section id="about" data-aos="flip-right" class="section">
+
+    <h3>About<span class="span1">Me</span></h3>
+    <p>I’m a Full Stack Java Developer who enjoys building scalable, secure, and high-performance web applications.</p>
+
+    <div class="about-container" data-aos="flip-left">
+
+      <!-- LEFT SIDE IMAGE -->
+      <div class="about-img" data-aos="flip-left">
+        <div class="border-rotate">
+          <img src="./Images/illustration/profile_photo.jpeg" alt="profile">
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="about-content">
+
+        <!-- <h4>UI/UX Designer &amp; Web Developer</h4> -->
+        <h4>Full Stack-Web Developer</h4>
+        <!-- <p class="about-intro" style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Porro laborum, facere perferendis explicabo sunt dolorum.</p> -->
+
+        <p class="about-intro">
+          <i>I enjoy solving problems, learning new technologies, and writing clean, maintainable code.</i>
+        </p>
+
+        <!-- DETAILS GRID -->
+        <div class="about-info">
+
+          <div class="info-box">
+            <strong> Birthday:</strong> <span>17 December 2002</span>
+          </div>
+
+          <div class="info-box">
+            <strong> Age:</strong> <span>24</span>
+          </div>
+
+          <div class="info-box">
+            <strong>Post Degree:</strong> <span>M.Sc.(IT)</span>
+          </div>
+
+          <div class="info-box">
+            <strong> Role:</strong> <span>Web Developer</span>
+          </div>
+
+          <div class="info-box">
+            <strong> technologies:</strong> <span>HTML,CSS,JS,Java</span>
+          </div>
+
+          <div class="info-box">
+            <strong> Email:</strong> <span>vaibhavmali1712@gmail.com</span>
+          </div>
+
+          <div class="info-box">
+            <strong> Availability:</strong> <span>Full-time</span>
+          </div>
+
+          <div class="info-box">
+            <strong> Work Mode:</strong> <span>Remote/On-site</span>
+          </div>
+        </div>
+
+
+        <p class="about-bottom">
+          <i>Aspiring Full Stack Developer with hands-on experience in front-end and back-end technologies. Passionate
+          about building responsive web applications and continuously learning new tools and frameworks.</i>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- about section end -->
+
+
+  <!-- skill section -->
+  <section class="skills-section py-5" id="skills">
+    <div class="container">
+      <h2 class="skill-title mb-5 text-center"><span class="span1">My</span>Skills</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- HTML -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <i class="fab fa-html5 skill-icon text-danger"></i>
+            <h5>HTML</h5>
+            <p class="skill-percent">95%</p>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width:95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <i class="fab fa-css3-alt skill-icon text-primary"></i>
+            <h5>CSS</h5>
+            <p class="skill-percent">80%</p>
+            <div class="progress">
+              <div class="progress-bar bg-primary" style="width:80%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <i class="fab fa-js skill-icon text-warning"></i>
+            <h5>JavaScript</h5>
+            <p class="skill-percent">90%</p>
+            <div class="progress">
+              <div class="progress-bar bg-warning" style="width:90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- React -->
+        <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <i class="fab fa-react skill-icon text-info"></i>
+            <h5>React</h5>
+            <p class="skill-percent">80%</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width:80%"></div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Bootstrap -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <i class="fab fa-bootstrap skill-icon text-purple"></i>
+            <h5>Bootstrap</h5>
+            <p class="skill-percent">70%</p>
+            <div class="progress">
+              <div class="progress-bar bg-purple" style="width:70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <i class="fab fa-java skill-icon text-danger"></i>
+            <h5>Java</h5>
+            <p class="skill-percent">95%</p>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width:95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MySQL -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <i class="fas fa-database skill-icon text-success"></i>
+            <h5>MySQL</h5>
+            <p class="skill-percent">80%</p>
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width:80%"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- skill section end -->
+
+  <!-- Education section -->
+  <section class="education-section" id="education">
+    <h2 class="edu-title">Education</h2>
+    <p class="section-subtitle">
+      Currently advancing my knowledge and skills through ongoing training.
+    </p>
+
+    <div class="education-container">
+
+      <!-- Degree -->
+      <div class="edu-card">
+        <div class="edu-icon"><img src="./images/illustration/college.png" alt=""></div>
+        <h3>Master of Science in Information Technology</h3>
+        <p class="college">Zhulal Bhilajirao Patil College Dhule ,<b>U</b> - NMU Jalgaon, Maharashtra.</p>
+        <!-- <p class="board">Pune University</p> -->
+        <p class="year">2025 | 7.58</p>
+      </div>
+
+      <!-- HSC -->
+      <div class="edu-card">
+        <div class="edu-icon"><img src="./images/illustration/secondary.png" alt=""></div>
+        <h3>HSC</h3>
+        <p class="college">M.H.S.S. High School & Junior College Sindkheda, Dhule.</p>
+        <p class="board">Maharashtra State Board</p>
+        <p class="year">2020 | 73.67%</p>
+      </div>
+
+      <!-- SSC -->
+      <div class="edu-card">
+        <div class="edu-icon"><img src="./images/illustration/school.png" alt=""></div>
+        <h3>SSC</h3>
+        <p class="college">Krushi Madhymik Vidyalay Hol Dhule
+        </p>
+        <p class="board">Maharashtra State Board</p>
+        <p class="year">2018 | 83.80%</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- Education section end -->
+
+  <!-- project section -->
+<section id="projects" class="my-3 container content-section">
+  <h2 class="text-center heading" data-aos="flip-left">Projects</h2>
+  <p class="text-center my-3 text-muted">
+    Web development projects built to strengthen my coding skills and explore new technologies.
+  </p>
+
+  <div class="row my-3 g-4">
+
+    <!-- Project Card -->
+    <div class="col-12 col-md-6 col-lg-4 card1" data-aos="flip-right">
+      <img src="./images/illustration/project1 (2).png" alt="Restaurant Website">
+      <div class="project-overlay">
+        <h4>Music Playlist- Using React</h4>
+        <a href="./Projects/Restaurant Website/index.html" class="view-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 card1" data-aos="fade-right">
+      <img src="./Images/illustration/project1.png" alt="Medical Website">
+      <div class="project-overlay">
+        <h4>Medical Website</h4>
+        <a href="./Projects/Medical Website/index.html" class="view-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 card1" data-aos="fade-left">
+      <img src="./Images/illustration/project3.png" alt="Mini Project">
+      <div class="project-overlay">
+        <h4>Mini Project</h4>
+        <a href="./Projects/Miniproject/index.html" class="view-btn">View Project</a>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4 card1" data-aos="fade-right">
+      <img src="./Images/illustration/project9.png" alt="Redux Todo App">
+      <div class="project-overlay">
+        <h4>Redux Todo App</h4>
+        <a href="https://eloquent-sunshine-b6d068.netlify.app" target="_blank" class="view-btn">
+          View Project
+        </a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 card1" data-aos="flip-left">
+      <img src="./Images/illustration/project10.jpg" alt="Add to Cart App">
+      <div class="project-overlay">
+        <h4>Add To Cart App</h4>
+        <a href="https://thunderous-wisp-5411b3.netlify.app" target="_blank" class="view-btn">
+          View Project
+        </a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 card1" data-aos="flip-left">
+      <img src="./Images/illustration/project11.png" alt="Portfolio Project">
+      <div class="project-overlay">
+        <h4>Portfolio Project</h4>
+        <a href="https://stellar-zabaione-b8281b.netlify.app" target="_blank" class="view-btn">
+          View Project
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- project section ended -->
+
+
+  <!-- Contact section start -->
+  <section id="contact" data-aos="zoom-in" class="contact-section">
+    <h2 class="contact-title">Contact<span class="span1">Me</span></h2>
+
+    <div class="contact-container">
+
+
+      <div class="contact-info" data-aos="flip-right">
+        <h3>Get In Touch</h3>
+        <p>If you want to work together or have any project idea, feel free to reach out.</p>
+        <!-- <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32171.40448585676!2d73.82156495628925!3d18.44416007253345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac101655f87%3A0xcc5b0a20d60c9ac8!2sKatraj%2C%20Pune%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1764156167665!5m2!1sen!2sin"
+           height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+
+      </div>
+
+      <!-- RIGHT SIDE FORM -->
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+
+        <p id="form-status"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- contact section end -->
+
+  <!-- footer section -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Vaibhav Mali. All Rights Reserved.</p>
+
+    <div class="social-icons">
+
+      <a href="https://github.com/Vaibhavmali17" class="icon github"><i class="fab fa-github"></i></a>
+      <!-- <a href="#" class="icon facebook"><i class="fab fa-facebook"></i></a> -->
+      <a href="https://www.linkedin.com/in/vaibhav-m-mali7" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+  </footer>
+
+  <!-- footer end -->
+
+
+
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./script.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        offset: 100,
+        duration: 1000,
+      });
+  </script>
+</body>
+
+</html>
