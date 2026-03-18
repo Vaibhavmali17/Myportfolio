@@ -249,11 +249,11 @@ body, html{
 /* Left Image */
 /* OUTER GRADIENT BORDER (ROTATING) */
 .border-rotate {
-  width: 310px;
+  width: 335px;
   height: 335px;
   border-radius: 50%;
-  padding: 6px;
-  background: #050e25;
+  padding: 1px;
+  background: #384772;
   /* background: conic-gradient(
     #ff0000,
     #ff7a00,
