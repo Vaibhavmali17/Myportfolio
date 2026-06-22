@@ -7,4 +7,4 @@ This is my personal portfolio Website built using HTML, CSS and JavaScript.
 - HTML
 - CSS
 - JavaScript
-- Bootstrap
+- Bootstrap ( Baisc )
