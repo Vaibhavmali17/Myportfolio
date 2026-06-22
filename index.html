@@ -11,8 +11,11 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- AOS  -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- AOS Library Removed for Static Performance -->
 
 </head>
 
@@ -20,7 +23,7 @@
   <!-- navbar section -->
   <nav class="navbar navbar-expand-lg shadow fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#"><i>Vaibhav</i></a>
+      <a class="navbar-brand fw-bold" href="#"><i>Vaibhav Mali</i></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -42,48 +45,47 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="container">
-      <div class="hero-content">
-        <h1 class="welcome" data-aos="flip-left">Hello, It's Me</h1>
-
-        <h1 class="fw-bold" data-aos="flip-right">
-          <span class="name">Vaibhav Mali</span>
-        </h1>
-
-        <h2 class="typing-text"> And I'm
-          <span id="typing"></span>
-          <span class="underline"></span>
-        </h2>
-        <p>I’m a Full Stack Java Developer who enjoys building scalable, secure, and high-performance web applications.
-          <br> I love working with Java, Spring Boot, and modern frontend technologies to create clean, efficient, and
-          user-friendly solutions.
-        </p>
-        <div class="social-icons">
-
-          <a href="https://github.com/Vaibhavmali17" class="icon github"><i class="fab fa-github"></i></a>
-          <!-- <a href="#" class="icon facebook"><i class="fab fa-facebook"></i></a> -->
-          <a href="https://www.linkedin.com/in/vaibhav-m-mali17" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-7 hero-text text-start">
+          <h5 class="welcome">Welcome to my Portfolio</h5>
+          <h1 class="fw-bold">
+            I'm <span class="name">Vaibhav Mali</span>
+          </h1>
+          <h2 class="typing-text">
+            <span id="typing"></span>
+          </h2>
+          <p class="lead">I’m a Full Stack Java Developer dedicated to building scalable, secure, and user-centric web applications with precision and creativity.</p>
+          <div class="social-icons justify-content-start">
+            <a href="https://github.com/Vaibhavmali17" class="icon github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vaibhav-m-mali17" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
-
-
+        <!-- Right Image -->
+        <div class="col-lg-5 hero-img-container">
+          <img src="./images/illustration/hero_illustration_tech_1782133303415.png" alt="Full Stack Illustration" class="img-fluid hero-illustration">
+        </div>
       </div>
     </div>
   </section>
-  
+
 
 
  
   <!-- About section start -->
-  <section id="about" data-aos="flip-right" class="section">
+  <section id="about" class="section">
 
-    <h3>About<span class="span1">Me</span></h3>
-    <p>I’m a Full Stack Java Developer who enjoys building scalable, secure, and high-performance web applications.</p>
+    <h2 class="section-title"><span>About Me</span></h2>
+    <p class="section-subtitle">
+      I’m a Full Stack Java Developer who enjoys building scalable, secure, and high-performance web applications.
+    </p>
 
-    <div class="about-container" data-aos="flip-left">
+    <div class="about-container">
 
       <!-- LEFT SIDE IMAGE -->
-      <div class="about-img" data-aos="flip-left">
+      <div class="about-img">
         <div class="border-rotate">
-          <img src="./Images/illustration/myphoto.jpeg" alt="profile" id="myPhoto">
+          <img src="./Images/illustration/myphoto2.jpeg" alt="profile" id="myPhoto">
         </div>
       </div>
 
@@ -94,7 +96,7 @@
         <h4>Full Stack-Web Developer</h4>
       
 
-        <p class="about-intro">
+        <p class="about-intro" style="color: #107789;" >
           <i>I enjoy solving problems, learning new technologies, and writing clean, maintainable code.</i>
         </p>
 
@@ -145,10 +147,12 @@
   
 
 
-  <!-- skill section -->
   <section class="skills-section py-5" id="skills">
     <div class="container">
-      <h2 class="skill-title mb-5 text-center"><span class="span1">My</span>Skills</h2>
+      <h2 class="section-title"><span>My Skills</span></h2>
+      <p class="section-subtitle">
+        Proficient in a diverse stack of technologies, focusing on building robust backend systems and dynamic frontend interfaces.
+      </p>
 
       <div class="row g-4 justify-content-center">
 
@@ -203,11 +207,11 @@
         <!-- Bootstrap -->
         <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="skill-card">
-            <i class="fab fa-bootstrap skill-icon text-purple"></i>
+            <i class="fab fa-bootstrap skill-icon text-primary"></i>
             <h5>Bootstrap</h5>
             <p class="skill-percent">60%</p>
             <div class="progress">
-              <div class="progress-bar bg-purple" style="width:60%"></div>
+              <div class="progress-bar bg-primary" style="width:60%"></div>
             </div>
           </div>
         </div>
@@ -254,11 +258,10 @@
 
   <!-- skill section end -->
 
-  <!-- Education section -->
   <section class="education-section" id="education">
-    <h2 class="edu-title">Education</h2>
+    <h2 class="section-title"><span>My Education</span></h2>
     <p class="section-subtitle">
-      Currently advancing my knowledge and skills through ongoing training.
+      Building a strong foundation through academic excellence and continuous technical learning.
     </p>
 
     <div class="education-container">
@@ -304,68 +307,106 @@
   </section>
   <!-- Education section end -->
 
+
+
   <!-- project section -->
-<section id="projects" class="my-3 container content-section">
-  <h2 class="text-center heading" data-aos="flip-left">Projects</h2>
-  <p class="text-center my-3 text-muted">
+<section id="projects" class="content-section">
+  <div class="container">
+    <h2 class="section-title"><span>Featured Projects</span></h2>
+  <p class="section-subtitle">
     Web development projects built to strengthen my coding skills and explore new technologies.
   </p>
 
   <div class="row my-3 g-4">
 
     <!-- Project Card -->
-    <div class="col-12 col-md-6 col-lg-4 card1" data-aos="flip-right">
-      <img src="" alt="PlantHub E-Commerce Website">
-      <div class="project-overlay">
-        <h4>PlantHub E-Commerce Website</h4>
-        <a href="" class="view-btn">View Project</a>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1000" alt="PlantHub E-Commerce Website">
+        <div class="project-overlay">
+          <h4>PlantHub E-Commerce</h4>
+          <a href="" class="view-btn">View Project</a>
+        </div>
       </div>
     </div>
 
-    <div class="col-12 col-md-6 col-lg-4 card1" data-aos="flip-left">
-      <img src="" alt="Portfolio Project">
-      <div class="project-overlay">
-        <h4>Portfolio Project</h4>
-        <a href="" target="_blank" class="view-btn">
-          View Project
-        </a>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000" alt="Portfolio Project">
+        <div class="project-overlay">
+          <h4>Modern Portfolio</h4>
+          <a href="" target="_blank" class="view-btn">View Project</a>
+        </div>
       </div>
     </div>
 
-     <div class="col-12 col-md-6 col-lg-4 card1" data-aos="flip-left">
-      <img src="" alt="Employee Management Project">
-      <div class="project-overlay">
-        <h4>Employee Management Project</h4>
-        <a href="" target="_blank" class="view-btn">
-          View Project
-        </a>
+     <div class="col-12 col-md-6 col-lg-4">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1000" alt="Employee Management Project">
+        <div class="project-overlay">
+          <h4>Team Manager Pro</h4>
+          <a href="" target="_blank" class="view-btn">View Project</a>
+        </div>
       </div>
     </div>
 
-  </div>
+    </div> <!-- end row -->
+  </div> <!-- end container -->
 </section>
 
 
 
   <!-- Contact section start -->
-  <section id="contact" data-aos="zoom-in" class="contact-section">
-    <h2 class="contact-title">Contact<span class="span1">Me</span></h2>
-
+  <section id="contact" class="contact-section">
     <div class="contact-container">
-
-
-      <div class="contact-info" data-aos="flip-right">
-        <h3>Get In Touch</h3>
-        <p>If you want to work together or have any project idea, feel free to reach out.</p>
+      <div class="contact-info">
+        <h2 class="section-title text-start"><span>Get In Touch</span></h2>
+        <p class="section-subtitle text-start">
+          I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+        </p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h6>Email Me</h6>
+              <p>vaibhavmali1712@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h6>LinkedIn</h6>
+              <p>vaibhav-m-mali17</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h6>Github</h6>
+              <p>Vaibhavmali17</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- RIGHT SIDE FORM -->
       <form id="contact-form" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="subject" placeholder="Subject" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
 
         <p id="form-status"></p>
       </form>
@@ -377,15 +418,37 @@
 
   <!-- footer section -->
   <footer class="footer">
-    <p>&copy; <span id="year"></span> Vaibhav Mali. All Rights Reserved.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Vaibhav Mali</h4>
+          <p>Full Stack Java Developer passionate about building scalable, secure, and user-centric web applications.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt me-2"></i> Maharashtra, India</p>
+          <p><i class="fas fa-envelope me-2"></i> vaibhavmali1712@gmail.com</p>
+          <div class="social-icons mt-3">
+            <a href="https://github.com/Vaibhavmali17" class="icon github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vaibhav-m-mali17" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
 
-    <div class="social-icons">
-
-      <a href="https://github.com/Vaibhavmali17" class="icon github"><i class="fab fa-github"></i></a>
-      <!-- <a href="#" class="icon facebook"><i class="fab fa-facebook"></i></a> -->
-      <a href="https://www.linkedin.com/in/vaibhav-m-mali17" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Vaibhav Mali. All Rights Reserved.</p>
+        <p>Made with <i class="fas fa-heart text-danger"></i> in India</p>
+      </div>
     </div>
-
   </footer>
 
   <!-- footer end -->
@@ -399,14 +462,7 @@
 
   <script src="./script.js"></script>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init(
-      {
-        offset: 100,
-        duration: 1000,
-      });
-  </script>
+  <!-- AOS library and init removed for static scrolling -->
 </body>
 
 </html>
