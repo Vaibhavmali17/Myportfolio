@@ -27,8 +27,8 @@ window.addEventListener("scroll", () => {
 var typingElement = document.getElementById("typing");
 
 var textArray = [
-    "Java Full Stack-Web Developer ",
-    "Back-end Developer ",
+    "Java Full Stack-Web Developer",
+    "Java Back-end Developer",
     "Front-end Developer "
 ];
 
