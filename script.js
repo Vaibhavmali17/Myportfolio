@@ -47,7 +47,7 @@ function typeAnimation() {
 
     typingElement.textContent = currentText;
 
-    let speed = isDeleting ? 80 : 120;
+    let  speed = isDeleting  ?  80 : 120;
 
     if (!isDeleting && charIndex === textArray[typingIndex].length) {
         speed = 1200;
