@@ -8,7 +8,6 @@
 .cursor, .cursor-follower {
   display: none;
 }
-
 /* Base Theme */
 body, html {
   font-family: 'Inter', sans-serif;
@@ -41,7 +40,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px); /* Minimal lift */
   background: rgba(255, 255, 255, 0.03);
 }
-
 /* NAVBAR */
 .navbar {
   background: rgba(15, 23, 42, 0.95);
@@ -59,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar.scrolled {
   padding: 0.75rem 0;
-  background: rgba(0, 0, 0, 0.98);
+  background: rgba(0, 0, 0, 0.97);
 }
 
 .navbar-brand {
@@ -206,7 +204,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.5);
   color: #fff;
 }
-
 /* SECTION HEADINGS */
 .section-title {
   font-size: 2.5rem;
@@ -299,7 +296,6 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1.5rem;
   margin: 2rem 0;
 }
-
 .info-box {
   background: rgba(255, 255, 255, 0.015);
   padding: 1rem;
