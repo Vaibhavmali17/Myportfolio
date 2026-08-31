@@ -16,7 +16,7 @@ window.addEventListener("scroll", () => {
         }
     });
 
-    navLinks.forEach(link => {
+    navLinks.forEach(lInk => {
         link.classList.remove("active");
         if (link.getAttribute("href").includes(current)) {
             link.classList.add("active");
