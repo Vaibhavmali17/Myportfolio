@@ -56,9 +56,14 @@
             <span id="typing"></span>
           </h2>
           <p class="lead">I’m a Full Stack Java Developer dedicated to building scalable, secure, and user-centric web applications with precision and creativity.</p>
-          <div class="social-icons justify-content-start">
-            <a href="https://github.com/Vaibhavmali17" class="icon github"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/vaibhav-m-mali17" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+          <div class="hero-btns justify-content-start d-flex align-items-center gap-3">
+            <div class="social-icons">
+              <a href="https://github.com/Vaibhavmali17" class="icon github" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/vaibhav-m-mali17" class="icon linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="./images/illustration/VaibhavMali_Resume.pdf" target="_blank" class="btn-resume">
+              <i class="fas fa-file-pdf me-2"></i>View Resume
+            </a>
           </div>
         </div>
         <!-- Right Image -->
@@ -83,9 +88,19 @@
     <div class="about-container">
 
       <!-- LEFT SIDE IMAGE -->
-      <div class="about-img">
-        <div class="border-rotate">
-          <img src="./images/illustration/myphoto2.jpeg" alt="profile" id="myPhoto">
+      <div class="about-img-wrapper">
+        <div class="about-img-glow"></div>
+        <div class="about-img">
+          <div class="border-rotate">
+            <img src="./images/illustration/myphoto2.jpeg" alt="Vaibhav Mali Profile" id="myPhoto">
+          </div>
+          <!-- Tech & Status Badges -->
+          <div class="profile-badge badge-top-right">
+            <span class="status-dot"></span> Available for Work
+          </div>
+          <div class="profile-badge badge-bottom-left">
+            <i class="fas fa-laptop-code me-1 text-info"></i> Full Stack Dev
+          </div>
         </div>
       </div>
 
@@ -108,10 +123,6 @@
           </div>
 
           <div class="info-box">
-            <strong> Age:</strong> <span>24</span>
-          </div>
-
-          <div class="info-box">
             <strong>Post Degree:</strong> <span>M.Sc.(IT)</span>
           </div>
 
@@ -120,7 +131,7 @@
           </div>
 
           <div class="info-box">
-            <strong> technologies:</strong> <span>HTML,CSS,JS,Java,Spring Boot,Hibernate</span>
+            <strong> Technologies:</strong> <span>Java, Spring Boot, JavaScript, React.js, SQL</span>
           </div>
 
           <div class="info-box">
@@ -313,42 +324,47 @@
 <section id="projects" class="content-section">
   <div class="container">
     <h2 class="section-title"><span>Featured Projects</span></h2>
-  <p class="section-subtitle">
-    Web development projects built to strengthen my coding skills and explore new technologies.
-  </p>
+    <p class="section-subtitle">
+      Web development projects built to strengthen my coding skills and explore new technologies.
+    </p>
 
-  <div class="row my-3 g-4">
+    <div class="row my-3 g-4">
 
-    <!-- Project Card -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1000" alt="PlantHub E-Commerce Website">
-        <div class="project-overlay">
-          <h4>PlantHub E-Commerce</h4>
-          <a href="" class="view-btn">View Project</a>
+      <!-- Project 1: HRM Portal (AI-Powered) -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1000" alt="HRM Portal (AI-Powered)">
+          <div class="project-overlay">
+            <h4>HRM Portal (AI-Powered)</h4>
+            <p>Full-stack HR management system built with Spring Boot, Spring Security (JWT), React.js, and PostgreSQL. Features role-based access control (Admin/Employee), an AI-powered HR chatbot using Google Gemini, automated email onboarding, and a light/dark theme toggle.</p>
+            <a href="https://github.com/Vaibhavmali17/Human-Resource-Management-System" target="_blank" class="view-btn"><i class="fab fa-github me-1"></i> View Project</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000" alt="Portfolio Project">
-        <div class="project-overlay">
-          <h4>Modern Portfolio</h4>
-          <a href="" target="_blank" class="view-btn">View Project</a>
+      <!-- Project 2: Employee Management System -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000" alt="Employee Management System">
+          <div class="project-overlay">
+            <h4>Employee Management System</h4>
+            <p>Backend REST API application built with Spring Boot following layered architecture (Controller, Service, Repository). Complete CRUD operations with Hibernate JPA and PostgreSQL, and custom exception handling for structured error management.</p>
+            <a href="https://github.com/Vaibhavmali17/employee-management-system" target="_blank" class="view-btn"><i class="fab fa-github me-1"></i> View Project</a>
+          </div>
         </div>
       </div>
-    </div>
 
-     <div class="col-12 col-md-6 col-lg-4">
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1000" alt="Employee Management Project">
-        <div class="project-overlay">
-          <h4>Team Manager Pro</h4>
-          <a href="" target="_blank" class="view-btn">View Project</a>
+      <!-- Project 3: MovieSearch App -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=1000" alt="MovieSearch App">
+          <div class="project-overlay">
+            <h4>MovieSearch App</h4>
+            <p>React SPA to search and browse movies using the OMDB REST API, with React Router for navigation. Built a custom hook to abstract API logic, using useState/useEffect/useRef hooks.</p>
+            <a href="https://github.com/Vaibhavmali17/movie-search-app" target="_blank" class="view-btn"><i class="fab fa-github me-1"></i> View Project</a>
+          </div>
         </div>
       </div>
-    </div>
 
     </div> <!-- end row -->
   </div> <!-- end container -->
@@ -366,27 +382,27 @@
         </p>
         
         <div class="contact-details">
-          <div class="contact-item">
+          <a href="mailto:vaibhavmali1712@gmail.com" class="contact-item">
             <i class="fas fa-envelope"></i>
             <div>
               <h6>Email Me</h6>
               <p>vaibhavmali1712@gmail.com</p>
             </div>
-          </div>
-          <div class="contact-item">
+          </a>
+          <a href="https://www.linkedin.com/in/vaibhav-m-mali17" target="_blank" rel="noopener noreferrer" class="contact-item">
             <i class="fab fa-linkedin"></i>
             <div>
               <h6>LinkedIn</h6>
               <p>vaibhav-m-mali17</p>
             </div>
-          </div>
-          <div class="contact-item">
+          </a>
+          <a href="https://github.com/Vaibhavmali17" target="_blank" rel="noopener noreferrer" class="contact-item">
             <i class="fab fa-github"></i>
             <div>
               <h6>Github</h6>
               <p>Vaibhavmali17</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
