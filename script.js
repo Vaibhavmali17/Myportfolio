@@ -69,3 +69,49 @@ const yearElement = document.getElementById('year');
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
+
+// Certifications Lightbox Modal Logic
+const certModal = document.getElementById('cert-modal');
+const certModalImg = document.getElementById('cert-modal-img');
+const certModalTitle = document.getElementById('cert-modal-title');
+const certModalClose = document.getElementById('cert-modal-close');
+const certModalBackdrop = document.getElementById('cert-modal-backdrop');
+const certButtons = document.querySelectorAll('.btn-view-cert');
+
+function openCertModal(imgSrc, title) {
+    if (!certModal) return;
+    certModalImg.src = imgSrc;
+    certModalTitle.textContent = title || 'Certificate Preview';
+    certModal.classList.add('active');
+    certModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertModal() {
+    if (!certModal) return;
+    certModal.classList.remove('active');
+    certModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
+
+certButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const imgSrc = button.getAttribute('data-cert-img');
+        const title = button.getAttribute('data-cert-title');
+        openCertModal(imgSrc, title);
+    });
+});
+
+if (certModalClose) {
+    certModalClose.addEventListener('click', closeCertModal);
+}
+
+if (certModalBackdrop) {
+    certModalBackdrop.addEventListener('click', closeCertModal);
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && certModal && certModal.classList.contains('active')) {
+        closeCertModal();
+    }
+});
