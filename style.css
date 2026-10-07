@@ -9,6 +9,7 @@
   display: none;
 }
 
+
 /* Base Theme */
 body, html {
   font-family: 'Inter', sans-serif;
@@ -24,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: 700;
 }
+
 
 /* Glassmorphism Utility */
 .glass-card {
@@ -41,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px); /* Minimal lift */
   background: rgba(255, 255, 255, 0.03);
 }
+
 
 /* NAVBAR */
 .navbar {
@@ -79,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   transition: color 0.3s ease;
 }
+
 
 .navbar .nav-link:hover, 
 .navbar .nav-link.active {
